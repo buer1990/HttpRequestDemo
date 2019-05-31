@@ -26,7 +26,7 @@ public class ObjectUtils {
      * @throws IllegalAccessException
      */
     public static Map<String, Object> objectToMap(Object obj) throws IllegalAccessException {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<String, Object>();
         Class<?> clazz = obj.getClass();
         System.out.println(clazz);
         for (Field field : clazz.getDeclaredFields()) {
@@ -48,7 +48,7 @@ public class ObjectUtils {
      * @throws IllegalAccessException
      */
     public static Map<String, String> objectToMapString(String timeFormatStr, Object obj, String... excludeFields) throws IllegalAccessException {
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<String, String>();
 
         if (excludeFields.length!=0){
             List<String> list = Arrays.asList(excludeFields);
