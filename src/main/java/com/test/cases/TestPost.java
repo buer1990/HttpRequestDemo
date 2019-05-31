@@ -1,6 +1,6 @@
 package com.test.cases;
 
-import Utils.BaseTest;
+import com.test.utils.BaseTest;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.Assert;
 

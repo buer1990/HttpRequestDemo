@@ -1,4 +1,4 @@
-package Utils;
+package com.test.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.test.client.RestfulClient;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class BaseTest  {
+public class BaseTest  extends TestApi{
 
     private static final Log logger = LogFactory.getLog(BaseTest.class);
 
@@ -23,8 +23,8 @@ public class BaseTest  {
     public static String url;
     public static JSONObject responseBody;
     public static List<NameValuePair> params = new ArrayList<NameValuePair>();
-
-
+    public static Object[][] excelData;
+    public static ExcelProcess excelProcess=new ExcelProcess();
     @AfterClass
     public static void afterClass(){
         httpclient.shutDownConnection();
