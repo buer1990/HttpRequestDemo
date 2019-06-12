@@ -1,10 +1,7 @@
 package com.test.cases;
 
 import com.test.utils.BaseTest;
-import com.test.utils.ExcelProcess;
-import com.test.utils.TestApi;
 import org.apache.http.message.BasicNameValuePair;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -18,14 +15,7 @@ public class TestPostExcle extends BaseTest {
         super.beforeTest();
         //读取用例excel
         excelData= excelProcess.proessExcel(excelPath,0);
-
         url = "https://www.apishop.net/common/Guest/login";
-
-//        //  设置请求参数
-//        params.add(new BasicNameValuePair("loginCall","17326055509"));
-//        params.add(new BasicNameValuePair("loginPassword","95b722835cc2b2c059e5fab5121dfd31"));
-//        params.add(new BasicNameValuePair("verifyCode","23132dae703d4094598ee2bcb4552d57"));
-
     }
     @Test
     public void testPost() throws IOException {
@@ -36,6 +26,7 @@ public class TestPostExcle extends BaseTest {
             String loginCall =excelData[i][0].toString();
             String loginPassword =excelData[i][1].toString();
             String verifyCode =excelData[i][2].toString();
+            //  设置请求参数
             params.add(new BasicNameValuePair("loginCall",loginCall));
             params.add(new BasicNameValuePair("verifyCode",verifyCode));
             params.add(new BasicNameValuePair("loginPassword",loginPassword));
