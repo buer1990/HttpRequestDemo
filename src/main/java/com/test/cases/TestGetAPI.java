@@ -46,7 +46,7 @@ public class TestGetAPI {
 
         String responseBodyString= EntityUtils.toString(responseBody,"utf-8");
 
-        Map<String,String> map= new HashMap();
+        Map<String,String> map= new HashMap<String,String>();
         for (Header header:responseHeader){
             map.put(header.getName(),header.getValue());
         }
