@@ -1,4 +1,4 @@
-package com.test;
+package com.test.cases;
 
 
 import com.test.client.RestfulClient;

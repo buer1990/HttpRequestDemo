@@ -1,4 +1,4 @@
-package com.test.client;
+package com.test.cases;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -46,7 +46,7 @@ public class TestGetAPI {
 
         String responseBodyString= EntityUtils.toString(responseBody,"utf-8");
 
-        Map map= new HashMap<String,String>();
+        Map<String,String> map= new HashMap();
         for (Header header:responseHeader){
             map.put(header.getName(),header.getValue());
         }

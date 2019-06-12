@@ -1,4 +1,4 @@
-package com.test;
+package com.test.cases;
 
 import com.test.utils.BaseTest;
 import org.apache.http.message.BasicNameValuePair;
