@@ -96,6 +96,7 @@
             <excludes>
                 <exclude>**/*.properties</exclude>
                 <exclude>**/*.xml</exclude>
+                <exclude>**/*.xls</exclude>
             </excludes>
             <filtering>false</filtering>
         </resource>
