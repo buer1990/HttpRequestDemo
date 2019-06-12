@@ -91,7 +91,7 @@
                         <configuration>
                             <resources>
                                 <resource>
-                                    <directory>src/main/resources</directory>                                    <includes>
+                                    <directory>src\\main\\resources</directory>                                    <includes>
                                         <include>**/*.properties</include>
                                         <include>**/*.xml</include>
                                         <include>**/*.xls</include>
@@ -107,7 +107,7 @@
         <!--配置resources 资源-->
         <resources>
         <resource>
-            <directory>src/main/resources</directory>
+            <directory>src\\main\\resources</directory>
             <includes>
                 <include>**/*.properties</include>
                 <include>**/*.xml</include>
