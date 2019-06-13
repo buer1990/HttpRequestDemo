@@ -1,5 +1,6 @@
 package com.test.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -20,6 +21,7 @@ public class TestApi {
         }
 
         host = prop.getProperty("Host");
-        excelPath=prop.getProperty("testData");
+
+        excelPath = prop.getProperty("testData").replace("\\", File.separator);
     }
 }
