@@ -23,7 +23,7 @@ public class TestGet {
         responseBody=client.getBody();
 
         System.out.println(responseCode);
-        System.out.println(responseBody);
+//        System.out.println(responseBody);
     }
 
     @Test

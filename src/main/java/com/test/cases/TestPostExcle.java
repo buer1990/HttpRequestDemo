@@ -18,7 +18,7 @@ public class TestPostExcle extends BaseTest {
         url = "https://www.apishop.net/common/Guest/login";
     }
     @Test
-    public void testPost() throws IOException {
+    public void testPostExcle() throws IOException {
         SoftAssert softAssert =new SoftAssert();
         //从第二行开始遍历表单，跳过表头
         for (int i=1;i<excelData.length;i++){

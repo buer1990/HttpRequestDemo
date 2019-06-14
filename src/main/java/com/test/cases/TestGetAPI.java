@@ -53,7 +53,7 @@ public class TestGetAPI {
 
 
         System.out.println("This is the response code:" + responseCode);
-        System.out.println("This is the response body:" + responseBodyString);
+//        System.out.println("This is the response body:" + responseBodyString);
         System.out.println("This is the response header in hash" + map);
     }
 
